@@ -1,9 +1,6 @@
 package be.cegeka.selfeval5.highway.application;
 
-import be.cegeka.selfeval5.highway.domain.highway.Highway;
-import be.cegeka.selfeval5.highway.domain.highway.HighwayService;
-import be.cegeka.selfeval5.highway.domain.highway.IncidentService;
-import be.cegeka.selfeval5.highway.domain.incident.Incident;
+import be.cegeka.selfeval5.highway.domain.incident.IncidentService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;

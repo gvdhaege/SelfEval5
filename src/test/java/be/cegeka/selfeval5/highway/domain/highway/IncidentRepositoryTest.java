@@ -2,6 +2,7 @@ package be.cegeka.selfeval5.highway.domain.highway;
 
 import be.cegeka.selfeval5.highway.Application;
 import be.cegeka.selfeval5.highway.domain.incident.Incident;
+import be.cegeka.selfeval5.highway.domain.incident.IncidentRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,8 +17,6 @@ import javax.transaction.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

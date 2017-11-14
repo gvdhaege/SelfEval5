@@ -1,6 +1,4 @@
-package be.cegeka.selfeval5.highway.domain.highway;
-
-import be.cegeka.selfeval5.highway.domain.incident.Incident;
+package be.cegeka.selfeval5.highway.domain.incident;
 
 import javax.inject.Inject;
 import javax.inject.Named;

@@ -1,8 +1,6 @@
 package be.cegeka.selfeval5.highway.application;
 
-import be.cegeka.selfeval5.highway.domain.highway.HighwayService;
-import be.cegeka.selfeval5.highway.domain.highway.IncidentService;
-import be.cegeka.selfeval5.highway.domain.incident.Incident;
+import be.cegeka.selfeval5.highway.domain.incident.IncidentService;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -10,7 +8,6 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
 
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.verify;
 
 public class IncidentControllerTest {
