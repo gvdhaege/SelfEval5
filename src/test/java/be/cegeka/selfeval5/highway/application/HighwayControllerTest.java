@@ -26,8 +26,7 @@ public class HighwayControllerTest {
 
     @Test
     public void addHighway_shouldCallCorrespondingMethodInService() throws Exception {
-    Highway testHighway = new Highway("E40", 300);
-    highwayController.addHighway("E40", 300);
+        highwayController.addHighway("E40", 300);
 
         verify(highwayService).addHighway("E40", 300);
     }
