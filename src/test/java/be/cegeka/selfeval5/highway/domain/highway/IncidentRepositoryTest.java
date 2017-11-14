@@ -29,7 +29,8 @@ public class IncidentRepositoryTest {
 
     @PersistenceContext
     private EntityManager entityManager;
-    private Incident testIncident = new Incident("Bandicoot", "Crash", 24);
+    private Highway testHighway = new Highway("E40", 30);
+    private Incident testIncident = new Incident("Bandicoot", "Crash", 24, testHighway.getID());
 
     @Test
     public void getAllHighways_shouldReturnAllHighways() throws Exception {

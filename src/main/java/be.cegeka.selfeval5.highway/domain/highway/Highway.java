@@ -6,11 +6,13 @@ import javax.persistence.*;
 public class Highway {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "HIGHWAY_ID")
     private int id;
     @Column(name = "NAME")
     private String name;
     @Column(name = "DISTANCE")
     private int distance;
+
 
     public Highway() {
     }

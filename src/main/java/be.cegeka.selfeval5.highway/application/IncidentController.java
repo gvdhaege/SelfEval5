@@ -1,5 +1,6 @@
 package be.cegeka.selfeval5.highway.application;
 
+import be.cegeka.selfeval5.highway.domain.highway.Highway;
 import be.cegeka.selfeval5.highway.domain.incident.IncidentService;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,7 +23,8 @@ public class IncidentController {
     @PostMapping(path = "/add")
     public void addIncident(@RequestParam(value = "name", required = true) String name,
                             @RequestParam(value = "type", required = true) String type,
-                            @RequestParam(value = "distance", required = true) int distance) {
-    incidentService.addIncident(name, type, distance);
+                            @RequestParam(value = "distance", required = true) int distance,
+                            @RequestParam(value = "highwayID", required = true) int highwayID) {
+    incidentService.addIncident(name, type, distance, highwayID);
     }
 }

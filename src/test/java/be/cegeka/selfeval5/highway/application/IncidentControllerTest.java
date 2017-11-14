@@ -22,8 +22,8 @@ public class IncidentControllerTest {
 
     @Test
     public void addHighway_shouldCallCorrespondingMethodInService() throws Exception {
-        incidentController.addIncident("Bandicoot", "Crash", 34);
-        verify(incidentService).addIncident("Bandicoot", "Crash", 34);
+        incidentController.addIncident("Bandicoot", "Crash", 34,1);
+        verify(incidentService).addIncident("Bandicoot", "Crash", 34, 1);
 
     }
 }

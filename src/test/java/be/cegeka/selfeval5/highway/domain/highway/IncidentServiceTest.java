@@ -25,8 +25,8 @@ public class IncidentServiceTest {
 
     @Test
     public void addIncident_shouldCallCorrespondingMethodInRepository() throws Exception {
-        incidentService.addIncident("Bandicoot", "Crash", 24);
-        verify(incidentRepository).addIncident(Mockito.refEq(new Incident("Bandicoot", "Crash", 24)));
+        incidentService.addIncident("Bandicoot", "Crash", 24, 1);
+        verify(incidentRepository).addIncident(Mockito.refEq(new Incident("Bandicoot", "Crash", 24, 1)));
     }
 
 
