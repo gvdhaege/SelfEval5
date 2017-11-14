@@ -51,6 +51,13 @@ public class HighwayRepositoryTest {
         Assertions.assertThat(actual).isEqualTo(expected);
     }
 
+    @Test
+    public void getHighwayByID_shouldReturnCorrectHighway() throws Exception {
+        highwayRepository.addHighway(testHighway);
+        Highway actual = highwayRepository.getHighwayByID(testHighway.getID());
+        Assertions.assertThat(actual).isEqualTo(testHighway);
+    }
+
     @After
     public void tearDown() throws Exception {
         entityManager.clear();

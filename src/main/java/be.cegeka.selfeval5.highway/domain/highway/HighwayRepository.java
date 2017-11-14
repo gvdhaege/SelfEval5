@@ -19,4 +19,11 @@ public class HighwayRepository {
     public void addHighway(Highway highway) {
         entityManager.persist(highway);
     }
+
+    public Highway getHighwayByID(int id) {
+        return entityManager.createQuery("select h from Highway h where id = :id", Highway.class)
+                .setParameter("id", id)
+                .getSingleResult();
+
+    }
 }

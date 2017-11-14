@@ -9,7 +9,11 @@ public class HighwayService {
     @Inject
     private HighwayRepository highwayRepository;
 
-    public void addHighway(Highway highway){
-        highwayRepository.addHighway(highway);
+    public void addHighway(String name, int distance){
+        highwayRepository.addHighway(new Highway(name, distance));
+    }
+
+    public Highway getHighwayByID(int id) {
+        return highwayRepository.getHighwayByID(id);
     }
 }

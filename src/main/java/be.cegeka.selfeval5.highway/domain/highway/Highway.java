@@ -21,4 +21,15 @@ public class Highway {
     }
 
 
+    public int getID() {
+        return id;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
